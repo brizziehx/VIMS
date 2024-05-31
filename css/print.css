@@ -1,0 +1,93 @@
+.container-r {
+    width: 8.27in;
+    margin: 20px auto;
+    background: #ffffff;
+    /* height: 10.69in; */
+    padding: 0 20px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px !important;
+    /* margin: 0 auto; */
+    margin-bottom: 10px;
+}
+
+.buttons a {
+    display: inline-block;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    padding: 5px 7px;
+    background: #420a77;
+    color: #fff;
+    border-radius: 5px; 
+    margin-right: 10px;
+    text-decoration: none;
+}
+.buttons a i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.buttons .printBtn {
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    padding: 5px 7px;
+    background: #00008d;
+    color: #fff;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.buttons .printBtn i {
+    margin-right: 5px;
+}
+
+.buttons .printBtn:hover {
+    cursor: pointer;
+    background:  #1717c9;
+}
+
+.buttons .backBtn {
+    background: #000 !important;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #ddd; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #fff; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff; 
+  }
+
+  @media print {
+    body * {
+        visibility: hidden;
+    }
+    .print, .print * {
+        visibility: visible;
+    }
+    .hidden, .hidden * {
+        visibility: visible;
+    }
+    .table thead tr th {
+      -webkit-print-color-adjust: exact;
+    }
+  }
